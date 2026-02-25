@@ -1,7 +1,7 @@
-# Blueprint: My Apartment
+# Blueprint: My MBTI
 
 ## Overview
-"My Apartment" is a modern, framework-less web application designed to provide a unique and interactive user experience. It leverages modern web standards (Web Components, Container Queries, `:has()` selector, etc.) to ensure high performance and maintainability.
+"My MBTI" is a modern, framework-less web application designed to provide a unique and interactive user experience for personality discovery. It leverages modern web standards (Web Components, Container Queries, `:has()` selector, etc.) to ensure high performance and maintainability.
 
 ## Project Details
 - **Architecture:** Framework-less (HTML, CSS, JS).
@@ -12,14 +12,14 @@
 ## Project History & Implementation Details
 - Initial project structure with `index.html`, `style.css`, and `main.js`.
 - Git remote configured to `https://github.com/skrjsdna-design/myapartment.git`.
-- Implemented 4-question MBTI quiz with multi-language support (EN, KO, JA, ES).
-- Center-aligned quiz UI for better visual balance.
+- Implemented 4-question MBTI quiz with multi-language support.
+- Center-aligned quiz UI and polished layout with Hero section.
+- Enriched content with 8 questions and 16 detailed personality types.
 
-## Current Task: Layout Polishing & Content Enrichment
-- **Objective:** Create a perfectly symmetrical, clean layout and enrich the content with detailed MBTI descriptions and a more professional landing page.
+## Current Task: Rebranding & Expanded Multi-language Support
+- **Objective:** Rename the project to "My MBTI" and add support for Japanese, Chinese, and Spanish.
 - **Plan:**
-  1. **Landing Page Enhancement:** Add a Hero section and a Footer to `index.html`.
-  2. **Visual Polishing:** Refine `style.css` with better spacing, typography (Plus Jakarta Sans), and subtle background textures.
-  3. **Content Enrichment:** Expand `main.js` to include 8 questions (2 per dimension) and detailed descriptions for all 16 personality types.
-  4. **Symmetry Check:** Ensure all elements are perfectly centered and balanced across the viewport.
-  5. **Commit and push the changes.**
+  1. Update `index.html` to change the title and hero text to "My MBTI".
+  2. Update `main.js` to include full translations for English, Korean, Japanese, Chinese, and Spanish.
+  3. Ensure the language selection screen includes all 5 options.
+  4. Commit and push the changes.

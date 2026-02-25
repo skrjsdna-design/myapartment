@@ -1,5 +1,5 @@
 /**
- * MBTI Quiz Web Component with Multi-language Support & Rich Content
+ * My MBTI Quiz Web Component with Multi-language Support (EN, KO, JA, ZH, ES)
  */
 class MBTIQuiz extends HTMLElement {
   constructor() {
@@ -79,8 +79,112 @@ class MBTIQuiz extends HTMLElement {
           ESTP: { title: "모험을 즐기는 사업가", desc: "명석하고 에너지가 넘치며 직관력이 뛰어난 사람들입니다." },
           ESFP: { title: "자유로운 영혼의 연예인", desc: "즉흥적이고 에너지가 넘치며 열정적인 사람들로 주변 사람들을 즐겁게 합니다." }
         }
+      },
+      ja: {
+        selectLang: '言語を選択してください',
+        question: '質問',
+        of: '/',
+        resultTitle: 'あなたの性格タイプ！',
+        restart: 'やり直す',
+        questions: [
+          { id: 'ei', text: '忙しい一週間が終わった後、どのようにリフレッシュしたいですか？', options: [{ label: '友達と外出して新しい人々に会う', value: 'E' }, { label: '一人で静かな時間を過ごすか、親しい友人と会う', value: 'I' }] },
+          { id: 'sn', text: '新しいことを学ぶとき、通常どのようなことに注目しますか？', options: [{ label: '事実、詳細、そして実用的な応用', value: 'S' }, { label: 'アイデア、可能性、そして全体像', value: 'N' }] },
+          { id: 'tf', text: '難しい決断をするとき、どちらをより重視しますか？', options: [{ label: '論理、一貫性、そして客観的な分析', value: 'T' }, { label: '人々、価値観、そして他者への影響', value: 'F' }] },
+          { id: 'jp', text: '日々の仕事やプロジェクトにどのように取り組むのが好きですか？', options: [{ label: '事前に計画を立て、明確なスケジュールに従う', value: 'J' }, { label: '自発的に行動し、選択肢を広げておく', value: 'P' }] },
+          { id: 'ei', text: 'グループディスカッションで、あなたは通常...', options: [{ label: '早めに発言して自分の考えを共有する', value: 'E' }, { label: 'まずは聞き役に回り、考えがまとまってから発言する', value: 'I' }] },
+          { id: 'sn', text: '問題を解決するとき、どちらに頼る傾向がありますか？', options: [{ label: '証明された方法や過去の経験', value: 'S' }, { label: '直感や創造的な試行錯誤', value: 'N' }] },
+          { id: 'tf', text: 'どのような人をより高く評価しますか？', options: [{ label: '公平でルールを遵守する人', value: 'T' }, { label: '共感力があり、心が温かい人', value: 'F' }] },
+          { id: 'jp', text: 'あなたのワークスペースは通常...', options: [{ label: '整理整頓されている', value: 'J' }, { label: '散らかっているが機能的', value: 'P' }] }
+        ],
+        types: {
+          INTJ: { title: "建築家", desc: "想像力が豊かで、戦略的な思考の持ち主。あらゆる物事に対して計画を立てます。" },
+          INTP: { title: "論理学者", desc: "革新的な発明家で、知識に対する飽くなき渇望を持っています。" },
+          ENTJ: { title: "指揮官", desc: "大胆で想像力豊かな強い意志を持つ指導者。常に道を見い出す人々です。" },
+          ENTP: { title: "討論者", desc: "知的挑戦を恐れない、賢くて好奇心旺盛な思考家です。" },
+          INFJ: { title: "提唱者", desc: "静かで神秘的だが、非常にインスピレーションを与える、飽くなき理想主義者です。" },
+          INFP: { title: "仲介者", desc: "詩的で親切、そして利他的。常に良い大義を助けようとする情熱的な人々です。" },
+          ENFJ: { title: "主人公", desc: "カリスマ性があり、人々にインスピレーションを与えるリーダー。聴衆を魅了する能力があります。" },
+          ENFP: { title: "広報運動家", desc: "情熱的で独創的、かつ社交的な自由人。常に笑顔の理由を見つけられます。" },
+          ISTJ: { title: "管理者", desc: "実用的で事実に基づいた思考を持つ、信頼性の高い個人です。" },
+          ISFJ: { title: "擁護者", desc: "非常に献身的で温かい保護者。常に愛する人を守る準備ができています。" },
+          ESTJ: { title: "幹部", desc: "優れた管理者で、物や人を管理することにおいて右に出る者はいません。" },
+          ESFJ: { title: "領事", desc: "非常に思いやりがあり、社交的で人気のある人々。常に助けようとしています。" },
+          ISTP: { title: "巨匠", desc: "大胆で実用的な実験者。あらゆる道具を使いこなす達人です。" },
+          ISFP: { title: "冒険家", desc: "柔軟で魅力的な芸術家。常に新しいことを探索し、経験する準備ができています。" },
+          ESTP: { title: "起業家", desc: "賢くエネルギッシュで、非常に洞察力が鋭い。スリルを楽しむ人々です。" },
+          ESFP: { title: "エンターテイナー", desc: "即興的でエネルギッシュ、情熱的な人々。周囲を飽きさせません。" }
+        }
+      },
+      zh: {
+        selectLang: '选择您的语言',
+        question: '问题',
+        of: '/',
+        resultTitle: '您的性格类型！',
+        restart: '重新开始',
+        questions: [
+          { id: 'ei', text: '在漫长的一周后，你更喜欢如何充电？', options: [{ label: '和朋友出去并结识新朋友', value: 'E' }, { label: '独处或与亲密的朋友安静地度过', value: 'I' }] },
+          { id: 'sn', text: '当学习新事物时，通常什么会引起你的注意？', options: [{ label: '事实、细节和实际应用', value: 'S' }, { label: '想法、可能性和宏观蓝图', value: 'N' }] },
+          { id: 'tf', text: '当做出艰难决定时，你更看重什么？', options: [{ label: '逻辑、一致性和客观分析', value: 'T' }, { label: '人、价值观以及对他人的影响', value: 'F' }] },
+          { id: 'jp', text: '你更喜欢如何处理日常任务或项目？', options: [{ label: '提前计划并遵循明确的时间表', value: 'J' }, { label: '随性而为并保持各种选择', value: 'P' }] },
+          { id: 'ei', text: '在小组讨论中，你通常...', options: [{ label: '早早发言并分享你的想法', value: 'E' }, { label: '先倾听，有了明确的想法后再发言', value: 'I' }] },
+          { id: 'sn', text: '解决问题时，你倾向于依赖...', options: [{ label: '经过验证的方法和过去的经验', value: 'S' }, { label: '直觉和创造性的实验', value: 'N' }] },
+          { id: 'tf', text: '你更欣赏哪种人？', options: [{ label: '公平且遵守规则的人', value: 'T' }, { label: '有同情心且内心温暖的人', value: 'F' }] },
+          { id: 'jp', text: '你的工作空间通常是...', options: [{ label: '整洁有序', value: 'J' }, { label: '杂乱但实用', value: 'P' }] }
+        ],
+        types: {
+          INTJ: { title: "建筑师", desc: "富有想象力和战略性的思想家，一切皆有计划。" },
+          INTP: { title: "逻辑学家", desc: "具有强大创新能力的发现者，对知识有无穷的渴求。" },
+          ENTJ: { title: "指挥官", desc: "大胆、富有想象力且意志强大的领导者，总能找到出路。" },
+          ENTP: { title: "辩论家", desc: "聪明且好奇的思想家，无法抗拒智力挑战。" },
+          INFJ: { title: "提唱者", desc: "安静而神秘，但非常鼓舞人心且不知疲倦的理想主义者。" },
+          INFP: { title: "调解员", desc: "诗意、善良且利他的人，总是渴望帮助正义事业。" },
+          ENFJ: { title: "主人公", desc: "富有魅力且鼓舞人心的领导者，能够让听众着迷。" },
+          ENFP: { title: "竞选者", desc: "热情、富有创造力且爱社交的自由灵魂，总能找到微笑的理由。" },
+          ISTJ: { title: "物流师", desc: "务实且注重事实的人，可靠性不容置疑。" },
+          ISFJ: { title: "守卫者", desc: "非常专注且温暖的守护者，时刻准备保护爱的人。" },
+          ESTJ: { title: "总经理", desc: "出色的管理者，在管理事务或人员方面无与伦比。" },
+          ESFJ: { title: "执政官", desc: "极具同情心、爱社交且受欢迎的人，总是渴望提供帮助。" },
+          ISTP: { title: "鉴赏家", desc: "大胆且务实的实验者，精通各类工具。" },
+          ISFP: { title: "探险家", desc: "灵活且充满魅力的艺术家，随时准备探索和体验新事物。" },
+          ESTP: { title: "企业家", desc: "聪明、精力充沛且极具洞察力的人，真正享受生活在边缘。" },
+          ESFP: { title: "表演者", desc: "自发、精力充沛且热情的人，身边生活永不枯燥。" }
+        }
+      },
+      es: {
+        selectLang: 'Elige tu idioma',
+        question: 'Pregunta',
+        of: 'de',
+        resultTitle: '¡Tu tipo de personalidad!',
+        restart: 'Hacerlo de nuevo',
+        questions: [
+          { id: 'ei', text: 'Después de una semana larga, ¿cómo prefieres recargar energías?', options: [{ label: 'Saliendo con amigos y conociendo gente nueva', value: 'E' }, { label: 'Pasando tiempo tranquilo solo o con un amigo cercano', value: 'I' }] },
+          { id: 'sn', text: 'Al aprender algo nuevo, ¿qué suele captar tu atención?', options: [{ label: 'Hechos, detalles y aplicaciones prácticas', value: 'S' }, { label: 'Ideas, posibilidades y el panorama general', value: 'N' }] },
+          { id: 'tf', text: 'Al tomar una decisión difícil, ¿qué te importa más?', options: [{ label: 'Lógica, consistencia y análisis objetivo', value: 'T' }, { label: 'Personas, valores y el impacto en los demás', value: 'F' }] },
+          { id: 'jp', text: '¿Cómo prefieres abordar tus tareas diarias o proyectos?', options: [{ label: 'Planificando con antelación y siguiendo un horario claro', value: 'J' }, { label: 'Siendo espontáneo y manteniendo las opciones abiertas', value: 'P' }] },
+          { id: 'ei', text: 'En una discusión grupal, tú sueles...', options: [{ label: 'Hablar pronto y compartir tus pensamientos', value: 'E' }, { label: 'Escuchar primero y hablar una vez que tienes una idea clara', value: 'I' }] },
+          { id: 'sn', text: 'Al resolver un problema, tiendes a confiar en...', options: [{ label: 'Métodos probados y experiencia pasada', value: 'S' }, { label: 'Intuición y experimentación creativa', value: 'N' }] },
+          { id: 'tf', text: 'Valoras a una persona que es...', options: [{ label: 'Justa y sigue las reglas', value: 'T' }, { label: 'Empática y de buen corazón', value: 'F' }] },
+          { id: 'jp', text: 'Tu espacio de trabajo suele estar...', options: [{ label: 'Organizado y ordenado', value: 'J' }, { label: 'Desordenado pero funcional', value: 'P' }] }
+        ],
+        types: {
+          INTJ: { title: "Arquitecto", desc: "Pensadores imaginativos y estratégicos, con un plan para todo." },
+          INTP: { title: "Lógico", desc: "Inventores innovadores con una sed insaciable de conocimiento." },
+          ENTJ: { title: "Comandante", desc: "Líderes audaces, imaginativos y de voluntad fuerte, siempre encontrando un camino." },
+          ENTP: { title: "Innovador", desc: "Pensadores inteligentes y curiosos que no pueden resistirse a un desafío intelectual." },
+          INFJ: { title: "Abogado", desc: "Idealistas silenciosos y místicos, pero muy inspiradores e incansables." },
+          INFP: { title: "Mediador", desc: "Personas poéticas, amables y altruistas, siempre deseosas de ayudar a una buena causa." },
+          ENFJ: { title: "Protagonista", desc: "Líderes carismáticos e inspiradores, capaces de cautivar a sus oyentes." },
+          ENFP: { title: "Activista", desc: "Espíritus libres entusiastas, creativos y sociables, que siempre pueden encontrar una razón para sonreír." },
+          ISTJ: { title: "Logista", desc: "Individuos prácticos y enfocados en los hechos, cuya confiabilidad no puede ser cuestionada." },
+          ISFJ: { title: "Defensor", desc: "Protectores muy dedicados y cálidos, siempre listos para defender a sus seres queridos." },
+          ESTJ: { title: "Ejecutivo", desc: "Excelentes administradores, insuperables en la gestión de cosas o personas." },
+          ESFJ: { title: "Cónsul", desc: "Personas extraordinariamente cariñosas, sociales y populares, siempre deseosas de ayudar." },
+          ISTP: { title: "Virtuoso", desc: "Experimentadores audaces y prácticos, maestros de todo tipo de herramientas." },
+          ISFP: { title: "Aventurero", desc: "Artistas flexibles y encantadores, siempre listos para explorar y experimentar algo nuevo." },
+          ESTP: { title: "Emprendedor", desc: "Personas inteligentes, enérgicas y muy perceptivas, que realmente disfrutan vivir al límite." },
+          ESFP: { title: "Animador", desc: "Personas espontáneas, enérgicas y entusiastas: la vida nunca es aburrida a su alrededor." }
+        }
       }
-      // Note: JA and ES could be added here similarly to make it complete.
     };
   }
 
@@ -145,13 +249,16 @@ class MBTIQuiz extends HTMLElement {
       ${this.getCommonStyles()}
       <style>
         .lang-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 2rem; }
-        .lang-btn { flex-direction: column; align-items: center; padding: 2rem; text-align: center; }
+        .lang-btn { flex-direction: column; align-items: center; padding: 1.5rem; text-align: center; }
         .lang-btn span:first-child { font-size: 1.5rem; margin-bottom: 0.5rem; }
       </style>
       <h2 style="text-align: center;">Choose your language</h2>
       <div class="lang-grid">
         <button class="lang-btn" onclick="this.getRootNode().host.setLanguage('en')"><span>🇺🇸</span><span>English</span></button>
         <button class="lang-btn" onclick="this.getRootNode().host.setLanguage('ko')"><span>🇰🇷</span><span>한국어</span></button>
+        <button class="lang-btn" onclick="this.getRootNode().host.setLanguage('ja')"><span>🇯🇵</span><span>日本語</span></button>
+        <button class="lang-btn" onclick="this.getRootNode().host.setLanguage('zh')"><span>🇨🇳</span><span>简体中文</span></button>
+        <button class="lang-btn" onclick="this.getRootNode().host.setLanguage('es')"><span>🇪🇸</span><span>Español</span></button>
       </div>
     `;
   }
