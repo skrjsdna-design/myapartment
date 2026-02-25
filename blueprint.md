@@ -1,7 +1,7 @@
 # Blueprint: My MBTI
 
 ## Overview
-"My MBTI" is a modern, framework-less web application designed to provide a unique and interactive user experience for personality discovery. It leverages modern web standards (Web Components, Container Queries, `:has()` selector, etc.) to ensure high performance and maintainability.
+"My MBTI" is a high-quality, framework-less web application designed to provide a unique and interactive user experience for personality discovery. It prioritizes original, high-value content and user trust, following modern web standards and Google AdSense quality guidelines.
 
 ## Project Details
 - **Architecture:** Framework-less (HTML, CSS, JS).
@@ -12,14 +12,17 @@
 ## Project History & Implementation Details
 - Initial project structure with `index.html`, `style.css`, and `main.js`.
 - Git remote configured to `https://github.com/skrjsdna-design/myapartment.git`.
-- Implemented 4-question MBTI quiz with multi-language support.
+- Implemented 8-question MBTI quiz with multi-language support (EN, KO, JA, ZH, ES).
 - Center-aligned quiz UI and polished layout with Hero section.
-- Enriched content with 8 questions and 16 detailed personality types.
+- Enriched content with 16 detailed personality types.
+- Rebranded to "My MBTI" and expanded language support.
 
-## Current Task: Rebranding & Expanded Multi-language Support
-- **Objective:** Rename the project to "My MBTI" and add support for Japanese, Chinese, and Spanish.
+## Current Task: High-Quality Site Enhancements (AdSense Guidelines)
+- **Objective:** Improve the site's authority, content depth, and user experience based on AdSense guidelines (Originality, Value, Trust).
 - **Plan:**
-  1. Update `index.html` to change the title and hero text to "My MBTI".
-  2. Update `main.js` to include full translations for English, Korean, Japanese, Chinese, and Spanish.
-  3. Ensure the language selection screen includes all 5 options.
-  4. Commit and push the changes.
+  1. **Content Depth:** Expand personality descriptions with actionable advice (Strengths, Weaknesses, Career Paths).
+  2. **Expert Authority:** Add an "About the Test" section explaining the methodology to build user trust.
+  3. **Original Value:** Add a "Compatibility" feature or "Daily Insight" to provide unique value.
+  4. **SEO & Navigation:** Improve metadata and ensure intuitive navigation.
+  5. **Visual Trust:** Add a professional "Methodology" section and refine the footer with contact/about information.
+  6. **Commit and push the changes.**
