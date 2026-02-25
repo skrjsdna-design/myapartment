@@ -13,12 +13,11 @@
 - Initial project structure with `index.html`, `style.css`, and `main.js`.
 - Git remote configured to `https://github.com/skrjsdna-design/myapartment.git`.
 
-## Current Task: MBTI Quiz Implementation
-- **Objective:** Create a simple 4-question MBTI personality test.
+## Current Task: Multi-language Support
+- **Objective:** Allow users to choose between English, Korean, Japanese, and Spanish.
 - **Plan:**
-  1. Define 4 questions, one for each MBTI dimension (E/I, S/N, T/F, J/P).
-  2. Implement a `MBTIQuiz` Web Component in `main.js`.
-  3. Style the quiz with modern CSS in `style.css` (OKLCH colors, interactive effects).
-  4. Update `index.html` to display the quiz.
-  5. Verify the functionality and design.
-  6. Commit and push the changes.
+  1. Define a translation object for all 4 languages.
+  2. Add a language selection screen or toggle to the `MBTIQuiz` component.
+  3. Update the `render` logic to use the selected language's content.
+  4. Ensure the UI adapts to different language lengths.
+  5. Commit and push the changes.
