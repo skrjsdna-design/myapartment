@@ -286,16 +286,16 @@ class MBTIQuiz extends HTMLElement {
   getCommonStyles() {
     return `
       <style>
-        :host { display: block; font-family: 'Plus Jakarta Sans', sans-serif; max-width: 600px; width: 100%; margin: 0 auto; background: white; border-radius: 32px; padding: 3rem; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.08); border: 1px solid rgba(0,0,0,0.03); }
-        .progress { margin-bottom: 2.5rem; font-size: 0.875rem; color: #64748b; display: flex; justify-content: space-between; align-items: center; font-weight: 600; }
-        .progress-bar { height: 8px; background: #f1f5f9; border-radius: 4px; flex-grow: 1; margin: 0 1.5rem; overflow: hidden; }
+        :host { display: block; font-family: 'Plus Jakarta Sans', sans-serif; max-width: 520px; width: 100%; margin: 0 auto; background: white; border-radius: 28px; padding: 2rem; box-shadow: 0 20px 40px -12px rgba(0,0,0,0.06); border: 1px solid rgba(0,0,0,0.03); }
+        .progress { margin-bottom: 1.5rem; font-size: 0.8125rem; color: #64748b; display: flex; justify-content: space-between; align-items: center; font-weight: 600; }
+        .progress-bar { height: 6px; background: #f1f5f9; border-radius: 3px; flex-grow: 1; margin: 0 1rem; overflow: hidden; }
         .progress-fill { height: 100%; background: var(--accent-color, #6366f1); transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); }
-        h2 { font-size: 1.75rem; font-weight: 800; color: #0f172a; margin-bottom: 2.5rem; line-height: 1.3; text-align: center; letter-spacing: -0.02em; }
-        .options { display: grid; gap: 1.25rem; }
-        button { background: #f8fafc; border: 2px solid transparent; padding: 1.5rem 2rem; border-radius: 20px; text-align: center; font-size: 1.125rem; font-weight: 600; color: #334155; cursor: pointer; transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); display: flex; align-items: center; justify-content: center; }
-        button:hover { background: #ffffff; border-color: var(--accent-color); color: var(--accent-color); transform: scale(1.02); box-shadow: 0 10px 20px -5px oklch(0.65 0.2 260 / 0.1); }
+        h2 { font-size: 1.375rem; font-weight: 800; color: #0f172a; margin-bottom: 1.75rem; line-height: 1.3; text-align: center; letter-spacing: -0.02em; }
+        .options { display: grid; gap: 0.75rem; }
+        button { background: #f8fafc; border: 1.5px solid transparent; padding: 1rem 1.5rem; border-radius: 16px; text-align: center; font-size: 1rem; font-weight: 600; color: #334155; cursor: pointer; transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); display: flex; align-items: center; justify-content: center; }
+        button:hover { background: #ffffff; border-color: var(--accent-color); color: var(--accent-color); transform: scale(1.02); box-shadow: 0 8px 16px -4px oklch(0.65 0.2 260 / 0.1); }
         button:active { transform: scale(0.98); }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
       </style>
     `;
   }
