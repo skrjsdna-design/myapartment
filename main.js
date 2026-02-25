@@ -364,6 +364,7 @@ class MBTIQuiz extends HTMLElement {
           color: #111;
           margin-bottom: 2rem;
           line-height: 1.4;
+          text-align: center;
         }
 
         .options {
@@ -376,7 +377,7 @@ class MBTIQuiz extends HTMLElement {
           border: 2px solid transparent;
           padding: 1.25rem 1.5rem;
           border-radius: 16px;
-          text-align: left;
+          text-align: center;
           font-size: 1rem;
           font-weight: 500;
           color: #334155;
@@ -384,7 +385,7 @@ class MBTIQuiz extends HTMLElement {
           transition: all 0.2s ease;
           display: flex;
           align-items: center;
-          justify-content: space-between;
+          justify-content: center;
         }
 
         button:hover {

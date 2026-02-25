@@ -12,12 +12,11 @@
 ## Project History & Implementation Details
 - Initial project structure with `index.html`, `style.css`, and `main.js`.
 - Git remote configured to `https://github.com/skrjsdna-design/myapartment.git`.
+- Implemented 4-question MBTI quiz with multi-language support (EN, KO, JA, ES).
 
-## Current Task: Multi-language Support
-- **Objective:** Allow users to choose between English, Korean, Japanese, and Spanish.
+## Current Task: UI Alignment & Polishing
+- **Objective:** Center-align the quiz question and answer UI for better visual balance.
 - **Plan:**
-  1. Define a translation object for all 4 languages.
-  2. Add a language selection screen or toggle to the `MBTIQuiz` component.
-  3. Update the `render` logic to use the selected language's content.
-  4. Ensure the UI adapts to different language lengths.
-  5. Commit and push the changes.
+  1. Update `main.js` styles to center-align `h2` and `button` elements.
+  2. Adjust button layout to maintain aesthetics while centered.
+  3. Commit and push the changes.
