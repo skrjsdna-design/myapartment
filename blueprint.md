@@ -16,13 +16,12 @@
 - Center-aligned quiz UI and polished layout with Hero section.
 - Enriched content with 16 detailed personality types.
 - Rebranded to "My MBTI" and expanded language support.
+- Enhanced site quality based on AdSense guidelines (originality, trust, authority).
+- Reduced quiz UI size for a more compact and refined look.
 
-## Current Task: High-Quality Site Enhancements (AdSense Guidelines)
-- **Objective:** Improve the site's authority, content depth, and user experience based on AdSense guidelines (Originality, Value, Trust).
+## Current Task: Google AdSense Integration
+- **Objective:** Integrate Google AdSense for monetization and site verification.
 - **Plan:**
-  1. **Content Depth:** Expand personality descriptions with actionable advice (Strengths, Weaknesses, Career Paths).
-  2. **Expert Authority:** Add an "About the Test" section explaining the methodology to build user trust.
-  3. **Original Value:** Add a "Compatibility" feature or "Daily Insight" to provide unique value.
-  4. **SEO & Navigation:** Improve metadata and ensure intuitive navigation.
-  5. **Visual Trust:** Add a professional "Methodology" section and refine the footer with contact/about information.
-  6. **Commit and push the changes.**
+  1. Add the AdSense script and account meta tag to `index.html`.
+  2. Create an `ads.txt` file in the root directory for authorization.
+  3. Commit and push the changes.
