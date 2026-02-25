@@ -3,22 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Apartment | MBTI Quiz</title>
+  <title>My Apartment | MBTI Discovery</title>
   <link href='/style.css' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="background-decor">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </div>
+
   <main id="app">
-    <header>
-      <h1>My Apartment</h1>
-      <p>A place for self-discovery.</p>
+    <header class="hero">
+      <div class="hero-content">
+        <span class="badge">Personality Insight</span>
+        <h1>My Apartment</h1>
+        <p class="subtitle">Step inside and discover your true self. A place where understanding begins.</p>
+      </div>
     </header>
+
     <section class="content">
       <mbti-quiz></mbti-quiz>
     </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <p>&copy; 2026 My Apartment. Crafted for clarity.</p>
+        <div class="social-links">
+          <a href="#">Privacy</a>
+          <a href="#">About</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </footer>
   </main>
+
   <script defer type="module" src="/main.js"></script>
 </body>
 </html>
