@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://my-mbti-test.example.com/sitemap.xml
